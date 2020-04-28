@@ -1,0 +1,30 @@
+﻿@model IEnumerable<User>
+
+@{
+    ViewBag.Title = "StartSmart";
+}
+
+<h1 class="cover-heading text-center">Learn to become an entrepreneur with StartSmart </h1>
+<p class="lead text-center">
+    If ur student who is passionate about entrepreneurship and business, then StartSmart is just the tool for you. 
+    You will be mentored by reputable experts in the field and you will learn the important skills neccesary to jumpstart your entrepreneurship dreams.
+</p>
+<p class="lead text-center">
+    <a asp-action="create" asp--controller="home" class="btn btn-outline-dark btn-lg">Sign Up</a>
+</p>
+<div class="card-deck">
+    @foreach (var user in Model)
+    {
+
+        <div class="card m-3">
+            <div class="card-header">
+                <h3>@user.Name</h3>
+            </div>
+            <img class="card-img-top" src="~/images/noimage.png" />
+            <div class="card-footer text-center">
+                <a asp-controller="home" asp-action="details" asp-route-id="@user.Id"
+                   class="btn btn-primary">View</a>
+            </div>
+        </div>
+    }
+</div>
