@@ -11,13 +11,8 @@ namespace StartSmart.Models
 
         public MockUserRepository()
         {
-            _userList = new List<User>()
-            {
-                new User() { Id = 1, Name = "Kumayl", Email = "kumayla@uci.edu", Major = Major.ComputerScience},
-                new User() { Id = 2, Name = "Jeff", Email = "jeff@uci.edu", Major = Major.Informatics },
-                new User() { Id = 3, Name = "Jimmy", Email = "jimmy@uci.edu", Major = Major.Economics }
-
-            };
+            _userList = new List<User>();
+           
         }
 
         public User Add(User user)

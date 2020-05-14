@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using StartSmart.Models;
 using StartSmart.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,10 +13,12 @@ namespace StartSmart.Controllers
     public class HomeController : Controller
     {
         private readonly UserRepository _userRepository;
+        private readonly IWebHostEnvironment hostingEnvironment;
 
-        public HomeController( UserRepository userRepository )
+        public HomeController( UserRepository userRepository, IWebHostEnvironment hostingEnvironment)
         {
             _userRepository = userRepository;
+            this.hostingEnvironment = hostingEnvironment;
         }
         public ViewResult Index()
         {
@@ -40,11 +44,32 @@ namespace StartSmart.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create( User user )
+        public IActionResult Create( UserCreateViewModel model )
         {
             if( ModelState.IsValid )
             {
-                User newUser = _userRepository.Add(user);
+                string uniqueFileName = null;
+                if( model.ProfilePicture != null )
+                {
+                    string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ProfilePicture.FileName;
+                    string filePath =  Path.Combine(uploadsFolder, uniqueFileName);
+                    model.ProfilePicture.CopyTo( new FileStream( filePath, FileMode.Create));
+
+                }
+                User newUser = new User
+                {
+                    Name = model.Name,
+                    Email = model.Email,
+                    Major = model.Major,
+                    Bio = model.Bio,
+                    ProfilePicture = uniqueFileName,
+                    Password = model.Password
+                  
+                };
+
+                _userRepository.Add(newUser);
+
                 return RedirectToAction("details", new { id = newUser.Id });
             }
 

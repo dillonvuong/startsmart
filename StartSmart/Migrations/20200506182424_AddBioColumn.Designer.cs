@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StartSmart.Models;
 
 namespace StartSmart.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200506182424_AddBioColumn")]
+    partial class AddBioColumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -32,17 +34,13 @@ namespace StartSmart.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Major")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Major")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProfilePicture")
                         .HasColumnType("nvarchar(max)");
@@ -56,17 +54,15 @@ namespace StartSmart.Migrations
                         {
                             Id = 1,
                             Email = "kumayla@uci.edu",
-                            Major = "Computer Science",
-                            Name = "Kumayl",
-                            Password = "123456"
+                            Major = 1,
+                            Name = "Kumayl"
                         },
                         new
                         {
                             Id = 2,
                             Email = "dillon@uci.edu",
-                            Major = "Computer Science",
-                            Name = "Dillon",
-                            Password = "4567"
+                            Major = 1,
+                            Name = "Dillon"
                         });
                 });
 #pragma warning restore 612, 618

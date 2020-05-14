@@ -15,15 +15,17 @@ namespace StartSmart.Models
                 {
                     Id = 1,
                     Name = "Kumayl",
-                    Major = Major.ComputerScience,
-                    Email = "kumayla@uci.edu"
+                    Major = "Computer Science",
+                    Email = "kumayla@uci.edu",
+                    Password = "123456"
                 },
                 new User
                 {
                     Id = 2,
                     Name = "Dillon",
-                    Major = Major.ComputerScience,
-                    Email = "dillon@uci.edu"
+                    Major = "Computer Science",
+                    Email = "dillon@uci.edu",
+                    Password = "4567"
                 }
 
                );

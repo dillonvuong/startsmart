@@ -4,27 +4,28 @@
     ViewBag.Title = "StartSmart";
 }
 
-<h1 class="cover-heading text-center">Learn to become an entrepreneur with StartSmart </h1>
-<p class="lead text-center">
-    If ur student who is passionate about entrepreneurship and business, then StartSmart is just the tool for you. 
-    You will be mentored by reputable experts in the field and you will learn the important skills neccesary to jumpstart your entrepreneurship dreams.
-</p>
-<p class="lead text-center">
-    <a asp-action="create" asp--controller="home" class="btn btn-outline-dark btn-lg">Sign Up</a>
-</p>
-<div class="card-deck">
-    @foreach (var user in Model)
-    {
+  
+    <body >
+        <div class="intro_para">
+            <h1 class="cover_heading">Learn to become an entrepreneur right from home. </h1>
+            <img class="intro_img" src="~/images/illustration-hero.png" />
+            <p class="intro_about">
+                StartSmart teaches students how to grow their entrepreneurial ideas, from conception to implementation.
+            </p>
+            <!-- <button asp-action="create" asp-controller="home"  class="sign_up_btn">Get Started</button>-->
+            <button asp-action="Create" asp-controller="Home" class="get_started_btn">Get Started</button>
 
-        <div class="card m-3">
-            <div class="card-header">
-                <h3>@user.Name</h3>
-            </div>
-            <img class="card-img-top" src="~/images/noimage.png" />
-            <div class="card-footer text-center">
-                <a asp-controller="home" asp-action="details" asp-route-id="@user.Id"
-                   class="btn btn-primary">View</a>
-            </div>
         </div>
-    }
-</div>
+
+        <div class="offerings">
+            <img class="offer_img1" src="~/images/icon-controller.png" />
+            <img class="offer_img2" src="~/images/icon-feedback.png" />
+            <img class="offer_img3" src="~/images/icon-event.png" />
+            <h1 class="offer_head">What we offer</h1>
+        </div>
+
+        <div class="curric">
+            <h1 class="curric_head">Our Curriculumn</h1>
+            <p class="curric_para">Created by business educators at top universities, StartSmart’s curriculum is guaranteed to help you learn how to cultivate your ideas into tangible products.</p>
+        </div>
+    </body>

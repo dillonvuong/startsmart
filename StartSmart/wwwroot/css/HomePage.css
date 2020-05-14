@@ -1,0 +1,171 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+
+
+body {
+    background: #263238;
+}
+
+.intro para {
+    position: absolute;
+    width: 1321px;
+    height: 573px;
+    left: 116px;
+    top: 257px;
+}
+
+.intro_img {
+    position: absolute;
+    width: 448px;
+    height: 573px;
+    left: calc(50% - 448px/2 - 380px);
+    top: 257px;
+}
+
+.cover_heading {
+    position: absolute;
+    width: 687px;
+    height: 239px;
+    left: calc(50% - 687px/2 + 373.5px);
+    top: 305px;
+    padding-top: 50px;
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    /* or 125% */
+    color: #FFFFFF;
+}
+
+.intro_about {
+    position: absolute;
+    width: 652px;
+    height: 96px;
+    left: calc(50% - 652px/2 + 356px);
+    top: 557px;
+    /* Body */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-top: 50px;
+}
+
+
+.get_started_btn {
+    position: absolute;
+    width: 320px;
+    height: 64px;
+    left: calc(50% - 320px/2 + 190px);
+    top: 682px;
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.offerings {
+    position: absolute;
+    width: 1439px;
+    height: 712px;
+    left: 0px;
+    top: 100px;
+}
+
+.offer_head {
+    position: absolute;
+    width: 1371px;
+    height: 124px;
+    left: 33px;
+    top: 1039px;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 91px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.offer_img1 {
+    position: absolute;
+    width: 127px;
+    height: 127px;
+    left: 186px;
+    top: 1251px;
+}
+
+.offer_img2 {
+    position: absolute;
+    width: 133px;
+    height: 133px;
+    left: 652px;
+    top: 1257px;
+}
+
+.offer_img3 {
+    position: absolute;
+    width: 127px;
+    height: 127px;
+    left: 1118px;
+    top: 1257px;
+}
+
+.curric {
+    position: absolute;
+    width: 1439px;
+    height: 681px;
+    left: -2px;
+    top: 100px;
+}
+
+.curric_head {
+    position: absolute;
+    width: 670px;
+    height: 124px;
+    left: 46px;
+    top: 1896px;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 91px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.curric_para {
+    position: absolute;
+    width: 670px;
+    height: 106px;
+    left: 46px;
+    top: 1995px;
+    /* Body */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.curric_options {
+    position: absolute;
+    width: 674px;
+    height: 611px;
+    left: 735px;
+    top: 1715px;
+}

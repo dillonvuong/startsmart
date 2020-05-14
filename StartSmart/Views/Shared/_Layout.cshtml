@@ -3,24 +3,35 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!--><link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+    <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />-->
+    <link href="~/css/navbar.css" rel="stylesheet" />
+    <link href="~/css/HomePage.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" asp-action="index" asp--controller="home">StartSmart</a>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a asp-action="index" asp--controller="home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Login</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="container">
+    <header>
+        <img class="logo" src="~/images/brand_img.png" alt="logo" />
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Curriculumn</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Login</button></a>
+        <a class="cta2" href="#"><button>Sign Up</button></a>
+    </header>
+
+    
+    <div id ="grad1" class="container">
         @RenderBody()
     </div>
-    @RenderSection("Scripts", required: false )
+    @if (IsSectionDefined("Scripts"))
+    {
+        @RenderSection("Scripts", required: true)
+    }
+
 </body>
 </html>
