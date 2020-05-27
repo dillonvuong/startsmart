@@ -3,29 +3,38 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
     <!--><link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
     <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--<link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />-->
-    <link href="~/css/navbar.css" rel="stylesheet" />
+    <!-- <link href="~/css/navbar.css" rel="stylesheet" />-->
+    <link href="~/css/Welcomenavbar.css" rel="stylesheet" />
     <link href="~/css/HomePage.css" rel="stylesheet" />
+    <link href="~/css/details.css" rel="stylesheet" />
+    <link href="~/css/Welcome.css" rel="stylesheet" />
+
     <title>@ViewBag.Title</title>
 </head>
 <body>
     <header>
         <img class="logo" src="~/images/brand_img.png" alt="logo" />
+
         <nav>
             <ul class="nav__links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Curriculumn</a></li>
+                <li><a href="#" id="link1">About</a></li>
+                <li><a href="#" id="link2">Curriculumn</a></li>
             </ul>
         </nav>
-        <a class="cta" href="#"><button>Login</button></a>
-        <a class="cta2" href="#"><button>Sign Up</button></a>
-    </header>
+        <a class="cta" href="#" id="but1"><button class="nav_but">Login</button></a>
+        <a class="cta2" id="but2" asp-controller="Home" asp-action="Create"><button class="nav_but">Sign Up</button></a>
 
-    
-    <div id ="grad1" class="container">
+    </header>
+    <div class="container">
         @RenderBody()
     </div>
     @if (IsSectionDefined("Scripts"))

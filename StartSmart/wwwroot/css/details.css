@@ -1,0 +1,359 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+
+.profile {
+    position: absolute;
+    width: 344px;
+    height: 81px;
+    left: calc(50% - 344px/2 - 501px);
+    top: 189px;
+}
+
+.main_head {
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 109px;
+    color: #FFFFFF;
+}
+
+.gen_info {
+    position: absolute;
+    width: 753px;
+    height: 81px;
+    left: calc(50% - 753px/2 - 296.5px);
+    top: 325px;
+}
+
+.gen_head {
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+
+.NEM {
+    position: absolute;
+    width: 302px;
+    height: 217px;
+    left: 10px;
+    top: 100px;
+    /* H6 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    /* or 146% */
+    color: #FFFFFF;
+}
+
+.NEM2 {
+    position: absolute;
+    width: 302px;
+    height: 217px;
+    left: 10px;
+    top: 150px;
+    /* H6 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    /* or 146% */
+    color: #FFFFFF;
+}
+
+.NEM3 {
+    position: absolute;
+    width: 302px;
+    height: 217px;
+    left: 10px;
+    top: 200px;
+    /* H6 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    /* or 146% */
+    color: #FFFFFF;
+}
+
+.name {
+    position: absolute;
+    width: 128px;
+    height: 30px;
+    left: 500px;
+    top: 420px;
+    /* Body */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    color: #FFFFFF;
+}
+
+.email {
+    position: absolute;
+    width: 128px;
+    height: 30px;
+    left: 500px;
+    top: 470px;
+    /* Body */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    color: #FFFFFF;
+}
+
+.MBTI {
+    position: absolute;
+    width: 128px;
+    height: 30px;
+    left: 500px;
+    top: 520px;
+    /* Body */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    color: #FFFFFF;
+}
+
+.ach_head {
+    position: absolute;
+    width: 440px;
+    height: 81px;
+    left: calc(50% - 440px/2 - 453px);
+    top: 647px;
+    /* H2 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+
+.el_1 {
+    position: absolute;
+    width: 100.47px;
+    height: 100.47px;
+    left: 290px;
+    top: 759px;
+}
+
+.ach_1 {
+    position: absolute;
+    width: 66.81px;
+    height: 66.81px;
+    left: 304px;
+    top: 770.57px;
+}
+
+.el_2 {
+    position: absolute;
+    width: 100.47px;
+    height: 100.47px;
+    left: 426px;
+    top: 759px;
+}
+
+.ach_2 {
+    position: absolute;
+    width: 69.96px;
+    height: 69.96px;
+    left: 440px;
+    top: 773.73px;
+}
+
+.el_3 {
+    position: absolute;
+    width: 100.47px;
+    height: 100.47px;
+    left: 562px;
+    top: 759px;
+}
+
+.ach_3 {
+    position: absolute;
+    width: 69.96px;
+    height: 69.96px;
+    left: 576px;
+    top: 773.73px;
+}
+
+.event_head {
+    position: absolute;
+    width: 440px;
+    height: 81px;
+    left: calc(50% - 440px/2 - 452px);
+    top: 942px;
+    /* H2 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+
+.event_info {
+    position: absolute;
+    width: 302px;
+    height: 50px;
+    left: calc(50% - 440px/2 - 452px);
+    top: 1029px;
+    font-family: Prompt;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    color: #FFFFFF;
+}
+
+.conn_head {
+    position: absolute;
+    width: 440px;
+    height: 81px;
+    left: calc(50% - 440px/2 - 453px);
+    top: 1141px;
+    /* H2 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+
+.conn_info {
+    position: absolute;
+    width: 302px;
+    height: 50px;
+    left: calc(50% - 440px/2 - 453px);
+    top: 1228px;
+    font-family: Prompt;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    color: #FFFFFF;
+}
+
+.proj_head {
+    position: absolute;
+    width: 440px;
+    height: 81px;
+    left: calc(50% - 440px/2 - 453px);
+    top: 1340px;
+    /* H2 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+
+.proj_info {
+    position: absolute;
+    width: 302px;
+    height: 50px;
+    left: calc(50% - 440px/2 - 453px);
+    top: 1427px;
+    font-family: Prompt;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    color: #FFFFFF;
+}
+
+.footer {
+    position: absolute;
+    width: 1900px;
+    height: 199px;
+    left: 3px;
+    top: 1560px;
+    background: #011A63;
+}
+
+.logo_foot {
+    position: absolute;
+    left: 0%;
+    right: 79.26%;
+    top: 25.13%;
+    bottom: 25.13%;
+}
+
+.foot_brand {
+    position: absolute;
+    width: 44px;
+    height: 54px;
+    left: 100px;
+    top: 26px;
+}
+
+.ss_logo {
+    position: absolute;
+    width: 204px;
+    height: 73px;
+    left: 160px;
+    top: 17px;
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* white */
+    color: #FFFFFF;
+}
+
+.foot_els {
+    position: absolute;
+    width: 134px;
+    height: 34px;
+    left: 1265px;
+    top: 86px;
+}
+
+.foot_el1 {
+    position: absolute;
+    left: 310%;
+    right: 9.6%;
+    top: 43.22%;
+    bottom: 39.7%;
+}
+
+.foot_el2 {
+    position: absolute;
+    left: 352%;
+    right: 6.12%;
+    top: 43.22%;
+    bottom: 39.7%;
+}
+
+.foot_el3 {
+    position: absolute;
+    left: 394%;
+    right: 2.64%;
+    top: 43.22%;
+    bottom: 39.7%;
+}

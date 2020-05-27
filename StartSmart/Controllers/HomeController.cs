@@ -43,6 +43,12 @@ namespace StartSmart.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ViewResult WelcomePage()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Create( UserCreateViewModel model )
         {

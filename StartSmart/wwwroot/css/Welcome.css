@@ -1,0 +1,242 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+
+body
+{
+	background: linear-gradient(181.54deg, #000E35 14.58%, #011A63 97.32%) no-repeat fixed center;
+}
+
+.introTitle{
+	position: absolute;
+	width: 1099px;
+	height: 81px;
+	left: calc(50% - 1099px/2 - 131.5px);
+	top: 254px;
+}
+
+.introText{
+	font-family: Prompt;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 80px;
+
+	color: #FFFFFF;
+}
+
+.progressTitle{
+	position: absolute;
+	width: 482px;
+	height: 73px;
+	left: calc(50% - 1099px/2 - 131.5px);
+	top: 432px;
+}
+
+.progTitleText{
+	font-family: Prompt;
+	font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 73px;
+
+    color: #FFFFFF;
+}
+
+.progressBarTitle{
+    position: absolute;
+    width: 921px;
+    height: 110px;
+    left: calc(50% - 1099px/2 - 131.5px);
+    top: 547px;
+}
+
+.LessonText{
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.bizPlan{
+	font-family: Prompt;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 30px;
+	/* or 167% */
+
+	display: flex;
+	align-items: center;
+
+	color: #FFFFFF;
+}
+
+
+.progress {
+    position: absolute;
+    width: 1033px;
+    height: 30px;
+    left: 520px;
+    top: 590px;
+}
+
+.progress-bar {
+    background-color: #FFB65A;
+}
+
+.learnLinks{
+	position: relative;
+    top: 520px;
+    left: calc(50% - 1099px/2 - 131.5px);
+}
+
+.learnl1{
+	background: #FF4D51;
+    border: 1px solid #FFFFFF;    
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.learnl2{
+    border: 1px solid #FFFFFF;    
+    box-sizing: border-box;
+    border-radius: 4px;
+    right: 100px;
+}
+
+.button1{
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+
+    width: 200px;
+    height: 80px;
+
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+
+.button1:hover {
+    background-color: #FF1A1F;
+}
+
+.EventTitle{
+    left: calc(50% - 1099px/2 - 131.5px);
+    position: relative;
+    top:550px;
+}
+
+.eventTitleText{
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    /* or 167% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.viewAll{
+	position: relative;
+	left:900px;
+	bottom: -495px;
+	background: #FF4D51;  
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.eventCard{
+    position: absolute;
+    left: 17%;
+    bottom: -5%;
+}
+
+.mountains{
+}
+
+.personalInformation{
+
+}
+
+.personalTitle{
+	position: absolute;
+	left: calc(50% - 1099px/2 - 131.5px);
+	bottom: -20%;
+	font-family: Prompt;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 73px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.namePart{
+	position: absolute;
+	left: calc(50% - 1099px/2 - 131.5px);
+	bottom: -30%;
+	font-family: Prompt;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 73px;
+	display: flex;
+	align-items: center;
+
+	color: #FFFFFF;
+}
+
+.emailPart{
+    position: absolute;
+    left: calc(50% - 1099px/2 - 131.5px);
+    bottom: -35%;
+    font-family: Prompt;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 73px;
+	display: flex;
+	align-items: center;
+
+	color: #FFFFFF;
+}
+
+
+.MBTIPart{
+	position: absolute;
+    left: calc(50% - 1099px/2 - 131.5px);
+    bottom: -40%;
+    font-family: Prompt;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 73px;
+	display: flex;
+	align-items: center;
+
+	color: #FFFFFF;
+}
+
+.profileEditBut{
+    position: relative;
+    left: 900px;
+    bottom: -725px;
+    background: #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px; 
+}
