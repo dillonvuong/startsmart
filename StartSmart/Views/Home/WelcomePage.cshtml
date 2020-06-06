@@ -1,14 +1,14 @@
-﻿@model UserCreateViewModel
+﻿@model HomeDetailsViewModel
 
 @{
-    ViewBag.Title = "Sign Up";
+    ViewBag.Title = "Welcome back!";
 }
 
 <div id="user_welcome" class="container">
 
     <div class="introTitle">
         <h1 class="introText">
-            Welcome back, Cornelius!
+            Welcome back, @Model.User.Name!
         </h1>
     </div>
 
@@ -29,10 +29,10 @@
 
 
     <div class="progress">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-        60%
-      </div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+            60%
+        </div>
     </div>
 
     <div class="learnLinks">
@@ -58,22 +58,26 @@
         </h2>
 
         <p class="namePart">
-            Name:      Cornelius Smith
+            Name:      @Model.User.Name
         </p>
 
         <p class="emailPart">
-            Email:     csmith@uci.edu
+            Email:     @Model.User.Email
         </p>
 
         <p class="MBTIPart">
-            MBTI:      INFP
+            Major:     @Model.User.Major
+        </p>
+
+        <p class="interestPart">
+            Interests:     @Model.User.Bio
         </p>
 
         <a class="profileEditBut" href="#"><button class="button1">Edit Profile</button></a>
     </div>
 
 
-  
+
 
 </div>
 

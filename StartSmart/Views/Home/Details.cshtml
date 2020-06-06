@@ -13,77 +13,48 @@
     <h2 class="gen_head">General Information</h2>
     <h6 class="NEM">Name</h6>
     <h6 class="NEM2">Email</h6>
-    <h6 class="NEM3">MBTI</h6>
-
-</div>
-<h6 class="name">@Model.User.Name</h6>
-<h6 class="email">@Model.User.Email</h6>
-<h6 class="MBTI">None</h6>
-
-<h2 class="ach_head">Achievements</h2>
-
-<img class="el_1" src="~/images/el1.png" />
-<img class="ach_1" src="~/images/icon-controller.png" />
-<img class="el_2" src="~/images/el2.png" />
-<img class="ach_2" src="~/images/icon-feedback.png" />
-<img class="el_3" src="~/images/el3.png" />
-<img class="ach_3" src="~/images/icon-event.png" />
-
-<h2 class="event_head">Events Added</h2>
-<h6 class="event_info">Coming soon!</h6>
-
-<h2 class="conn_head">Connections</h2>
-<h6 class="conn_info">Coming soon!</h6>
-
-<h2 class="proj_head">My Projects</h2>
-<h6 class="proj_info">Coming soon!</h6>
-
-<div class="footer">
-    <div class="logo_foot">
-        <img class="foot_brand" src="~/images/brand_icon.png" alt="logo" />
-        <h3 class="ss_logo">StartSmart</h3>
-    </div>
-    <div class="foot_els">
-        <img class="foot_el1" src="~/images/foot_el1.png" />
-        <img class="foot_el2" src="~/images/foot_el2.png" />
-        <img class="foot_el3" src="~/images/foot_el3.png" />
-
-    </div>
-    
+    <h6 class="NEM3">Major</h6>
+    <h6 class="NEM4">Interests</h6>
 
 </div>
 
+<a asp-action="Edit"  asp-controller="Home" asp-route-id="@Model.User.Id">
+    <button class="edit_button">Edit</button>
+</a>
 
 
+    <h6 class="name">@Model.User.Name</h6>
+    <h6 class="email">@Model.User.Email</h6>
+    <h6 class="MBTI">@Model.User.Major</h6>
+    <h6 class="interests">@Model.User.Bio</h6>
 
+    <h2 class="ach_head">Achievements</h2>
 
+    <img class="el_1" src="~/images/el1.png" />
+    <img class="ach_1" src="~/images/icon-controller.png" />
+    <img class="el_2" src="~/images/el2.png" />
+    <img class="ach_2" src="~/images/icon-feedback.png" />
+    <img class="el_3" src="~/images/el3.png" />
+    <img class="ach_3" src="~/images/icon-event.png" />
 
-<!-- <div class="container">
-    <div class="row">
-        <div class="panel panel-default">
-            <div class="panel-heading">  <h4>Your Profile</h4></div>
-            <div class="panel-body">
-                <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
-                    <img alt="User Pic" src="@profilePicPath" id="profile-image1" class="img-circle img-responsive" asp-append-version="true" />
+    <h2 class="event_head">Events Added</h2>
+    <h6 class="event_info">Coming soon!</h6>
 
+    <h2 class="conn_head">Connections</h2>
+    <h6 class="conn_info">Coming soon!</h6>
 
-                </div>
-                <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
-                    <div class="container">
-                        <h2>@Model.User.Name</h2>
-                        <p>a   <b> Student</b></p>
+    <h2 class="proj_head">My Projects</h2>
+    <h6 class="proj_info">Coming soon!</h6>
 
+    <div class="footer">
+        <div class="logo_foot">
+            <img class="foot_brand" src="~/images/brand_icon.png" alt="logo" />
+            <h3 class="ss_logo">StartSmart</h3>
+        </div>
+        <div class="foot_els">
+            <img class="foot_el1" src="~/images/foot_el1.png" />
+            <img class="foot_el2" src="~/images/foot_el2.png" />
+            <img class="foot_el3" src="~/images/foot_el3.png" />
 
-                    </div>
-                    <hr>
-                    <ul class="container details">
-                        <li><p><span class="glyphicon glyphicon-user one" style="width:50px;"></span>@Model.User.Email</p></li>
-                        <li><p><span class="glyphicon glyphicon-envelope one" style="width:50px;"></span>@Model.User.Major</p></li>
-                    </ul>
-                    <hr>
-                    <div class="col-sm-5 col-xs-6 tital ">@Model.User.Bio</div>
-                </div>
-            </div>
         </div>
     </div>
-</div>-->

@@ -40,13 +40,82 @@ namespace StartSmart.Controllers
         [HttpGet]
         public ViewResult Create()
         {
+
             return View();
         }
 
         [HttpGet]
-        public ViewResult WelcomePage()
+        public ViewResult Edit( int id )
         {
-            return View();
+            User user = _userRepository.GetUser(id);
+            UserEditViewModel userEditViewModel = new UserEditViewModel
+            {
+                Id = user.Id,
+                Name = user.Name,
+                Email = user.Email,
+                Major = user.Major,
+                Bio = user.Bio
+
+            };
+
+            return View( userEditViewModel );
+        }
+
+        [HttpPost]
+        public IActionResult Edit( UserEditViewModel model )
+        {
+            System.Diagnostics.Debug.WriteLine(model.Major);
+            
+            User user = _userRepository.GetUser(model.Id);
+                
+            user.Name = model.Name;
+            user.Email = model.Email;
+            user.Major = model.Major;
+            user.Bio = model.Bio;
+
+            _userRepository.Update( user );
+
+            return RedirectToAction( "details" );
+            
+        }
+
+        private string ProccessUploadedFile(UserCreateViewModel model)
+        {
+            string uniqueFileName = null;
+            if (model.ProfilePicture != null)
+            {
+                string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ProfilePicture.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                model.ProfilePicture.CopyTo(new FileStream(filePath, FileMode.Create));
+
+            }
+
+            return uniqueFileName;
+        }
+
+        [HttpGet]
+        public ViewResult WelcomePage( int? id )
+        {
+            HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+            {
+                User = _userRepository.GetUser(id ?? 1),
+                PageTitle = "User Details"
+
+            };
+            return View(homeDetailsViewModel);
+        }
+
+        [HttpGet]
+        public ViewResult SignUpConfirmation(int? id)
+        {
+            HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+            {
+                User = _userRepository.GetUser(id ?? 1),
+                PageTitle = "Welcome to StartSmart"
+
+            };
+            return View(homeDetailsViewModel);
         }
 
         [HttpPost]
@@ -54,15 +123,8 @@ namespace StartSmart.Controllers
         {
             if( ModelState.IsValid )
             {
-                string uniqueFileName = null;
-                if( model.ProfilePicture != null )
-                {
-                    string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
-                    uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ProfilePicture.FileName;
-                    string filePath =  Path.Combine(uploadsFolder, uniqueFileName);
-                    model.ProfilePicture.CopyTo( new FileStream( filePath, FileMode.Create));
-
-                }
+                string uniqueFileName = ProccessUploadedFile(model);
+               
                 User newUser = new User
                 {
                     Name = model.Name,

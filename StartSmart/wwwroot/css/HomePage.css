@@ -1,123 +1,157 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
 
+html {
+    font-size: 1vw;
+}
 
 body {
-    background: #001245;
-    
+    background: linear-gradient(181.54deg, #000E35 14.58%, #011A63 97.32%) no-repeat fixed center;
+    max-width: 100%;
 }
 
-.intro para {
-    position: absolute;
-    width: 1321px;
-    height: 573px;
-    left: 116px;
-    top: 257px;
+.section {
+    max-width: 100%;
 }
+
+.container-fluid {
+    max-width: 90%;
+}
+
+.top_bar {
+    text-align: center;
+    padding: 1em;
+}
+
+
 
 .intro_img {
-    position: absolute;
-    width: 448px;
-    height: 573px;
-    left: calc(50% - 448px/2 - 380px);
-    top: 257px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.intro {
 }
 
 .cover_heading {
-    position: absolute;
-    width: 687px;
-    height: 239px;
-    left: calc(50% - 687px/2 + 373.5px);
-    top: 305px;
-    padding-top: 50px;
     font-family: Prompt;
     font-style: normal;
     font-weight: bold;
-    font-size: 64px;
-    line-height: 80px;
+    font-size: 3.5rem;
+    line-height: 1.2em;
     /* or 125% */
     color: #FFFFFF;
+    align-self: center;
+    align-content: start;
+}
+
+.offers {
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    align-self: center;
+    align-content: start;
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 1rem;
 }
 
 .intro_about {
-    position: absolute;
-    width: 652px;
-    height: 96px;
-    left: calc(50% - 652px/2 + 356px);
-    top: 557px;
+    position: relative;
     /* Body */
     font-family: Prompt;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
     /* or 167% */
-    display: flex;
     align-items: center;
     color: #FFFFFF;
-    padding-top: 50px;
+    box-sizing: border-box;
 }
 
 
 .get_started_btn {
-    position: absolute;
-    width: 320px;
-    height: 64px;
-    left: calc(50% - 320px/2 + 190px);
-    top: 682px;
+    position: relative;
+    width: 50%;
+    height: 12%;
+    font-size: 1rem;
     background: #FF4D51;
     /* red2 */
     border: 1px solid #FF4D51;
     box-sizing: border-box;
     border-radius: 4px;
+    align-self: center;
+    display: inline-block;
 }
 
-.offerings {
-    position: absolute;
-    width: 1439px;
-    height: 712px;
-    left: 0px;
-    top: 100px;
+.create_acct_btn {
+    position: relative;
+    width: 20%;
+    height: 200%;
+    font-size: 1rem;
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-self: center;
+    display: inline-block;
+}
+
+.offer_desc {
+    position: relative;
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    /* or 167% */
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 22%;
+    margin-right: 22%;
 }
 
 .offer_head {
-    position: absolute;
-    width: 1371px;
-    height: 124px;
-    left: 33px;
-    top: 1039px;
+    position: relative;
+    font-size: 3.5rem;
     /* H1 */
     font-family: Prompt;
     font-style: normal;
     font-weight: bold;
-    font-size: 60px;
-    line-height: 91px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: #FFFFFF;
 }
+
 .offer_img1 {
-    position: absolute;
-    width: 127px;
-    height: 127px;
-    left: 186px;
-    top: 1251px;
+    position: relative;
+    width: 40%;
+    height: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .offer_img2 {
-    position: absolute;
-    width: 133px;
-    height: 133px;
-    left: 652px;
-    top: 1257px;
+    position: relative;
+    width: 40%;
+    height: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .offer_img3 {
-    position: absolute;
-    width: 127px;
-    height: 127px;
-    left: 1118px;
-    top: 1257px;
+    position: relative;
+    width: 40%;
+    height: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .curric {

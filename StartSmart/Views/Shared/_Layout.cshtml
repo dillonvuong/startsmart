@@ -2,17 +2,13 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
-
-    <!--><link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
-    <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+   
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--<link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />-->
-    <!-- <link href="~/css/navbar.css" rel="stylesheet" />-->
     <link href="~/css/Welcomenavbar.css" rel="stylesheet" />
     <link href="~/css/HomePage.css" rel="stylesheet" />
     <link href="~/css/details.css" rel="stylesheet" />
@@ -20,6 +16,7 @@
 
     <title>@ViewBag.Title</title>
 </head>
+
 <body>
     <header>
         <img class="logo" src="~/images/brand_img.png" alt="logo" />
@@ -28,10 +25,11 @@
             <ul class="nav__links">
                 <li><a href="#" id="link1">About</a></li>
                 <li><a href="#" id="link2">Curriculumn</a></li>
+                <li><a href="#" id="link2">Network</a></li>
             </ul>
         </nav>
-        <a class="cta" href="#" id="but1"><button class="nav_but">Login</button></a>
-        <a class="cta2" id="but2" asp-controller="Home" asp-action="Create"><button class="nav_but">Sign Up</button></a>
+        <a class="cta" id="but1" asp-controller="Home" asp-action="Details"><button class="nav_but">My Profile</button></a>
+        <a class="cta2" id="but2" asp-controller="Home" asp-action="Create"><button class="nav_but">Log Out</button></a>
 
     </header>
     <div class="container">

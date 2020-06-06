@@ -232,6 +232,20 @@ body
 	color: #FFFFFF;
 }
 
+.interestPart {
+    position: absolute;
+    left: calc(50% - 1099px/2 - 131.5px);
+    bottom: -45%;
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 73px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
 .profileEditBut{
     position: relative;
     left: 900px;

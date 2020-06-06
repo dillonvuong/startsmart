@@ -32,3 +32,13 @@
     color: #fff;
 }
 
+.btn-primary {
+    background-color: #FF4D51;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #FF1A1F;
+    border: none;
+}
+

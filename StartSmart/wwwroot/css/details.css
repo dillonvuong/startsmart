@@ -82,6 +82,22 @@
     color: #FFFFFF;
 }
 
+.NEM4 {
+    position: absolute;
+    width: 302px;
+    height: 217px;
+    left: 10px;
+    top: 250px;
+    /* H6 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    /* or 146% */
+    color: #FFFFFF;
+}
+
 .name {
     position: absolute;
     width: 128px;
@@ -116,10 +132,26 @@
 
 .MBTI {
     position: absolute;
-    width: 128px;
+    width: 200px;
     height: 30px;
     left: 500px;
     top: 520px;
+    /* Body */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    color: #FFFFFF;
+}
+
+.interests {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 500px;
+    top: 570px;
     /* Body */
     font-family: Prompt;
     font-style: normal;
@@ -135,7 +167,7 @@
     width: 440px;
     height: 81px;
     left: calc(50% - 440px/2 - 453px);
-    top: 647px;
+    top: 660px;
     /* H2 */
     font-family: Prompt;
     font-style: normal;
@@ -356,4 +388,22 @@
     right: 2.64%;
     top: 43.22%;
     bottom: 39.7%;
+}
+
+
+.edit_button {
+    position: absolute;
+    width: 87px;
+    height: 38px;
+    left: 800px;
+    top: 345px;
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.edit_button:hover{
+    background-color: #FF1A1F;
 }
