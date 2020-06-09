@@ -4,80 +4,162 @@
     ViewBag.Title = "Welcome back!";
 }
 
-<div id="user_welcome" class="container">
+<!DOCTYPE html>
 
-    <div class="introTitle">
-        <h1 class="introText">
-            Welcome back, @Model.User.Name!
-        </h1>
-    </div>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <link href="~/css/bootstrap.min.css" rel="stylesheet">
+        <!--<link href="Welcomenavbar.css" rel="stylesheet" />-->
+        <!-- <link href="Welcome.css" rel="stylesheet" /> -->
 
-    <div class="progressTitle">
-        <h2 class="progTitleText">
-            Your Learn Progress
-        </h2>
-    </div>
+        <link href="~/css/navbar.css" rel="stylesheet">
+        <link href="~/css/Homepage.css" rel="stylesheet">
 
-    <div class="progressBarTitle">
-        <p class="LessonText">
-            Lesson 2
-        </p>
-        <p class="bizPlan">
-            Business Plan
-        </p>
-    </div>
+    </head>
+        <body>
+            <hr />
+            <div class="container-fluid">
+                <div class="section d-none d-lg-block">
+                    <div class="row">
+                        <div class="col-8 d-flex justify-content-start">
+                            <a asp-action="WelcomePage" asp-controller="Home" asp-route-id="@Model.User.Id"><img class="logo" src="~/images/brand_img.png" alt="logo" /></a>
+                            <a class="top_bar" asp-action="Learn" asp-controller="Home" asp-route-id="@Model.User.Id">Learn</a>
+                            <a class="top_bar" asp-action="Events" asp-controller="Home" asp-route-id="@Model.User.Id">Events</a>
+                            <a class="top_bar" href="#">Network</a>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end">
+                            <a class="cta" asp-action="Details" asp-controller="Home" asp-route-id="@Model.User.Id"><button>My Profile</button></a>
+                            <a class="cta_no_margin" asp-action="Index" asp-controller="Home"><button>Log out</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </body>
+
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <body>
+            <div class="container-fluid">
+                <div class="section d-none d-lg-block">
+                    <div class="row justify-content-start">
+
+                        <div class="offerings text-center col d-flex justify-content-left align-self-left">
+                            <h1 class="heading_1">Welcome back, @Model.User.FirstName</h1>
+                        </div>
+                    </div>
+                    <hr /><hr /><hr />
+                    <div class="row justify-content-start">
+
+                        <div class="offerings text-center col d-flex justify-content-left align-self-left">
+                            <h1 class="heading_2">Your Learn Progress</h1>
+                        </div>
+                    </div>
+                    <hr /><hr />
+                    <div class="row justify-content-start">
+
+                        <div class="offerings text-center col d-flex justify-content-left align-self-left">
+                            <h1 class="sub_1">Lesson 2</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-start">
+
+                        <div class="offerings text-center col-2 d-flex align-self-center">
+                            <h1 class="heading_3">Business Plan</h1>
+                        </div>
+                        <div class="progressBar">
+                            <div class="progress" style="height:2.5em;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;height:2.5em;">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr /><hr /><hr />
+                    <div class="row justify-content-start">
+                        <div class="col d-flex justify-content-start">
+                            <button class="cont_learning">Continue Learning</button>
+                            <button class="view_modules">View All Modules</button>
+                        </div>
+                    </div>
 
 
-    <div class="progress">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-            60%
-        </div>
-    </div>
+                    <hr /><hr /> <hr /><hr /><hr /><hr />
+                    <div class="row justify-content-start align-self-center">
+                        <div class="offerings text-center col-10 d-flex">
+                            <h1 class="heading_2">Events Near You</h1>
+                        </div>
+                        <div class="offerings text-center col-2 d-flex justify-content-end">
+                            <button class="view_events">View All</button>
+                        </div>
+                    </div>
 
-    <div class="learnLinks">
-        <a class="learnl1" href="#"><button class="button1">Continue Learning</button></a>
-        <a class="learnl2" href="#"><button class="button1">View all modules</button></a>
-    </div>
+                    <hr /><hr />
+                    <div class="row">
 
-    <div class="EventTitle">
-        <h2 class="eventTitleText">
-            Events Near You
-        </h2>
-    </div>
-
-    <a class="viewAll" href="#"><button class="button1">View all</button></a>
-
-    <div class="eventCard">
-        <img class="mountains" src="~/images/mountains.png" alt="mountains" />
-    </div>
-
-    <div class="personalInfo">
-        <h2 class="personalTitle">
-            Your Profile Information
-        </h2>
-
-        <p class="namePart">
-            Name:      @Model.User.Name
-        </p>
-
-        <p class="emailPart">
-            Email:     @Model.User.Email
-        </p>
-
-        <p class="MBTIPart">
-            Major:     @Model.User.Major
-        </p>
-
-        <p class="interestPart">
-            Interests:     @Model.User.Bio
-        </p>
-
-        <a class="profileEditBut" href="#"><button class="button1">Edit Profile</button></a>
-    </div>
+                        <div class="col d-flex justify-content-center">
+                            <img class="event_placeholder" src="~/images/events.png" alt="logo" />
+                        </div>
+                    </div>
 
 
+                    <hr /><hr /> <hr /><hr /><hr /><hr />
+                    <div class="row justify-content-start">
+
+                        <div class="offerings text-center col d-flex justify-content-left align-self-left">
+                            <h1 class="heading_2">Your Profile Information</h1>
+                        </div>
+                    </div>
+
+                    <hr /><hr />
+                    <div class="row justify-content-start">
+
+                        <div class="offerings text-center col-1 d-flex align-self-center">
+                            <h1 class="heading_4">Name:</h1>
+                        </div>
+                        <div class="offerings text-center col-2 d-flex align-self-center">
+                            <h1 class="heading_4">@Model.User.FirstName @Model.User.LastName </h1>
+                        </div>
+                    </div>
 
 
-</div>
+                    <hr /><hr />
+                    <div class="row justify-content-start">
 
+                        <div class="offerings text-center col-1 d-flex align-self-center">
+                            <h1 class="heading_4">Email:</h1>
+                        </div>
+                        <div class="offerings text-center col-2 d-flex align-self-center">
+                            <h1 class="heading_4">@Model.User.Email</h1>
+                        </div>
+                    </div>
+
+                    <hr /><hr /><hr />
+                    <div class="row justify-content-start">
+                        <div class="col">
+                            <a asp-action="Edit" asp-controller="Home" asp-route-id="@Model.User.Id"><button class="edit_profile">Edit Profile</button></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <hr /><hr />  <hr /><hr />  <hr /><hr />  <hr /><hr />  <hr /><hr />  <hr /><hr />  <hr /><hr />
+
+            <footer id="custom_footer" class="py-4 text-white-50 d-none d-lg-block">
+                <div class="container-fluid text-center">
+                    <div class="section ">
+                        <img class="logo" src="~/images/brand_img.png" alt="logo" />
+                        <small>Copyright &copy; StartSmart</small>
+                    </div>
+                </div>
+            </footer>
+
+        </body>
+</html>

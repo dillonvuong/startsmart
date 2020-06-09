@@ -7,10 +7,10 @@ namespace StartSmart.Models
 {
     public interface UserRepository
     {
-        User GetUser(int id);
-        IEnumerable<User> GetAllUsers();
-        User Add(User user);
-        User Update(User userChanges);
-        User Delete(int id);
+        ApplicationUser GetUser(string id);
+        IEnumerable<ApplicationUser> GetAllUsers();
+        ApplicationUser Add(ApplicationUser user);
+        ApplicationUser Update(ApplicationUser userChanges);
+        ApplicationUser Delete(int id);
     }
 }

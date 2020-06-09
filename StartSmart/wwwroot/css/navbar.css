@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -60,20 +60,32 @@ button{
     width: 130px;
     height: 60px;
     cursor: pointer;
-    border: none;
+    border:none;
+    border-radius: 4px;
     transition: all 0.3s ease 0s;
+
 }
 
 .cta {
     box-sizing: border-box;
     border-radius: 4px;
     position: relative;
+    border: 1px solid white;
+    margin-right: 1.5em;
+}
+
+.cta_no_margin{
+     box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid white;
 }
 
 .cta2 {
     background: #FF4D51;
     display:inline-block;
     border-radius: 4px;
+
 
 
 }

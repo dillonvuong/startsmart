@@ -10,24 +10,16 @@ namespace StartSmart.Models
     {
         public static void Seed( this ModelBuilder modelBuilder  )
         {
-            modelBuilder.Entity<User>().HasData(
-                new User
+            modelBuilder.Entity<ApplicationUser>().HasData(
+                new ApplicationUser
                 {
-                    Id = 1,
-                    Name = "Kumayl",
-                    Major = "Computer Science",
+                    Id = "2",
+                    FirstName = "Kumayl",
+                    LastName = "Abbas",
+                    MBTI = "INFP",
                     Email = "kumayla@uci.edu",
-                    Password = "123456"
-                },
-                new User
-                {
-                    Id = 2,
-                    Name = "Dillon",
-                    Major = "Computer Science",
-                    Email = "dillon@uci.edu",
-                    Password = "4567"
+                    Interests = "Software engineering, Front-end technology"
                 }
-
                );
         }
     }

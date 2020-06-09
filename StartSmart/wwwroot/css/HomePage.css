@@ -1,39 +1,65 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html {
-    font-size: 1vw;
+html{
+    font-size:1vw;
+        letter-spacing: 0.07em;
 }
-
 body {
-    background: linear-gradient(181.54deg, #000E35 14.58%, #011A63 97.32%) no-repeat fixed center;
+    background: #001245;
     max-width: 100%;
 }
 
-.section {
+.section{
     max-width: 100%;
 }
 
-.container-fluid {
-    max-width: 90%;
+.container-fluid{
+    max-width:90%;
 }
 
-.top_bar {
-    text-align: center;
-    padding: 1em;
-}
+.top_bar{  
+        text-align: center;
+        padding: 1em;
+    }
 
 
 
 .intro_img {
+
     width: 100%;
     height: 100%;
     align-items: center;
 }
 
-.intro {
+.success_img {
+
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    margin-left: 5em;
+
 }
 
+.success_img_after {
+    position:relative;
+    width: 50%;
+    height:100%;
+    align-items: center
+
+}
+
+
+.event_img {
+
+    width: 150%;
+    height: 100%;
+    align-items: center;
+}
+.intro{
+
+}
 .cover_heading {
+
     font-family: Prompt;
     font-style: normal;
     font-weight: bold;
@@ -43,22 +69,26 @@ body {
     color: #FFFFFF;
     align-self: center;
     align-content: start;
-}
 
-.offers {
+
+}
+.offers{
     font-family: Prompt;
     font-style: normal;
     font-weight: bold;
-    color: #FFFFFF;
+       color: #FFFFFF;
     align-self: center;
     align-content: start;
     text-align: center;
-    font-size: 1.7rem;
+    font-size:1.8rem;
     line-height: 1rem;
+
+
 }
 
 .intro_about {
     position: relative;
+
     /* Body */
     font-family: Prompt;
     font-style: normal;
@@ -66,6 +96,7 @@ body {
     font-size: 1.1rem;
     line-height: 2.5rem;
     /* or 167% */
+ 
     align-items: center;
     color: #FFFFFF;
     box-sizing: border-box;
@@ -77,6 +108,7 @@ body {
     width: 50%;
     height: 12%;
     font-size: 1rem;
+
     background: #FF4D51;
     /* red2 */
     border: 1px solid #FF4D51;
@@ -85,12 +117,12 @@ body {
     align-self: center;
     display: inline-block;
 }
-
-.create_acct_btn {
+.create_acct_btn{
     position: relative;
     width: 20%;
     height: 200%;
     font-size: 1rem;
+
     background: #FF4D51;
     /* red2 */
     border: 1px solid #FF4D51;
@@ -100,8 +132,174 @@ body {
     display: inline-block;
 }
 
-.offer_desc {
+.cont_learning{
     position: relative;
+    width: 13%;
+    height: 190%;
+    font-size: 0.8em;
+
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-self: center;
+    display: inline-block;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.view_modules {
+    position: relative;
+    width: 13%;
+    height: 190%;
+    font-size: 0.8rem;
+    /* red2 */
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid white;
+
+    border-radius: 4px;
+    align-self: center;
+    display: inline-block;
+    margin-left: 1.5em;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+.view_events{
+position: relative;
+    width: 90%;
+    height: 80%;
+    font-size: 0.8em;
+
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    display: inline-block;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;}
+
+
+.edit_profile{
+    position: relative;
+    width: 13%;
+    height: 190%;
+    font-size: 0.8em;
+
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-self: center;
+    display: inline-block;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.create_account_sign_up{
+    position: relative;
+    width: 30%;
+    height: 190%;
+    font-size: 0.8em;
+
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-self: center;
+    display: inline-block;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.create_account_sign_up_after{
+    position: relative;
+    width: 20%;
+    height: 200%;
+    font-size: 0.8em;
+
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-self: center;
+    display: inline-block;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.login{
+    position: relative;
+    width: 30%;
+    height: 190%;
+    font-size: 0.8em;
+
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-self: center;
+    display: inline-block;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+
+    color: #ffffff;
+    text-decoration: none;
+}
+.edit_general{
+    position: relative;
+    width: 12%;
+    height: 100%;
+    font-size: 0.8em;
+
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: inline-block;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 4em;
+
+}
+
+.offer_desc{
+    position:relative;
     font-family: Prompt;
     font-style: normal;
     font-weight: normal;
@@ -113,43 +311,151 @@ body {
     color: #FFFFFF;
     box-sizing: border-box;
     text-align: center;
-    margin-left: 22%;
-    margin-right: 22%;
-}
+    margin-left: 20%;
+    margin-right: 20%;
 
+}
 .offer_head {
     position: relative;
-    font-size: 3.5rem;
+    font-size:3.5rem;
     /* H1 */
     font-family: Prompt;
     font-style: normal;
     font-weight: bold;
+
+
+    color: #FFFFFF;
+}
+
+.heading_1{
+        position: relative;
+    font-size:3.5rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+
+
+    color: #FFFFFF;
+}
+
+.heading_2{
+        position: relative;
+    font-size:2.1rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 400 bold;
+
+
+    color: #FFFFFF;
+}
+
+.heading_3{
+        position: relative;
+    font-size:1.5rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 300 bold;
+
+
+    color: #FFFFFF;
+}
+
+.heading_4{
+        position: relative;
+    font-size:1.3rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 200 bold;
+
+
+    color: #FFFFFF;
+}
+
+.heading_5{
+    position: relative;
+    font-size:1.1rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 300;
+    margin-left: 4em;
+
+
+    color: #FFFFFF;
+}
+
+
+.sub_1{
+        position: relative;
+    font-size:0.9rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 200;
+
+
+    color: #FFFFFF;
+}
+
+.sub_1_italics{
+    position: relative;
+    font-size:0.9rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: italic;
+    font-weight: 200;
+
+
     color: #FFFFFF;
 }
 
 .offer_img1 {
     position: relative;
+
     width: 40%;
-    height: 45%;
+    height: 50%;
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.offer_profile {
+    position: relative;
+    width: 100%;
+    height: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.offer_img2 {
+.profile_event_img {
     position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.offer_img2 {
+ position: relative;
     width: 40%;
-    height: 45%;
-    display: block;
+    height: 50%;
+
+     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .offer_img3 {
     position: relative;
-    width: 40%;
-    height: 45%;
-    display: block;
+    width: 50%;
+    height: 50%;
+
+     display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -203,4 +509,115 @@ body {
     height: 611px;
     left: 735px;
     top: 1715px;
+}
+
+
+.progressBar{
+    position: relative;
+    width: 80%;
+    border-radius: 4px;
+}
+
+.progress-bar{
+    background-color: orange;
+    font-size: 1em;
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 500;
+
+
+    color: #FFFFFF;
+}
+
+
+.progress{
+    background-color: white;
+    border-radius: 50px;
+}
+
+.event_placeholder{
+
+    width:100%;
+    height:100%;
+
+}
+
+.event_placeholder_2{
+
+    width:100%;
+    height:100%;
+
+}
+
+.form-group{
+    width: 40em;
+}
+
+.form-group_2{
+    width: 20em;
+}
+
+
+.form-group-login{
+    width: 30em;
+}
+::placeholder {
+
+     position: relative;
+    font-size:0.9rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 100;
+
+  
+}
+
+label{
+      color: white;
+     position: relative;
+    font-size:0.9rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 100 bold;
+
+}
+
+
+
+#custom_footer{
+    background-color: #21315F;
+    height: 7em;
+}
+
+button:hover {
+    background-color: #FF1A1F;
+}
+
+.profile_edit {
+    position: relative;
+    width: 40%;
+    height: 190%;
+    font-size: 0.8em;
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-self: center;
+    display: inline-block;
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.mbti_link {
+    color: #FF4D51;
+    position: relative;
+    font-size: 0.7rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 100 bold;
 }

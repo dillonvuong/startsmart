@@ -8,7 +8,7 @@ namespace StartSmart.ViewModels
 {
     public class HomeDetailsViewModel
     {
-        public User User { get; set; }
+        public ApplicationUser User { get; set; }
         public string PageTitle { get; set; }
     }
 }

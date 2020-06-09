@@ -2,59 +2,199 @@
 
 @{
     ViewBag.Title = "StartSmart Profile";
-    var profilePicPath = "~/Images/" + (Model.User.ProfilePicture ?? "noimage.png");
+    
 }
 
-<div class="profile">
-    <h1 class="main_head">Profile</h1>
-</div>
+<!DOCTYPE html>
 
-<div class="gen_info">
-    <h2 class="gen_head">General Information</h2>
-    <h6 class="NEM">Name</h6>
-    <h6 class="NEM2">Email</h6>
-    <h6 class="NEM3">Major</h6>
-    <h6 class="NEM4">Interests</h6>
-
-</div>
-
-<a asp-action="Edit"  asp-controller="Home" asp-route-id="@Model.User.Id">
-    <button class="edit_button">Edit</button>
-</a>
-
-
-    <h6 class="name">@Model.User.Name</h6>
-    <h6 class="email">@Model.User.Email</h6>
-    <h6 class="MBTI">@Model.User.Major</h6>
-    <h6 class="interests">@Model.User.Bio</h6>
-
-    <h2 class="ach_head">Achievements</h2>
-
-    <img class="el_1" src="~/images/el1.png" />
-    <img class="ach_1" src="~/images/icon-controller.png" />
-    <img class="el_2" src="~/images/el2.png" />
-    <img class="ach_2" src="~/images/icon-feedback.png" />
-    <img class="el_3" src="~/images/el3.png" />
-    <img class="ach_3" src="~/images/icon-event.png" />
-
-    <h2 class="event_head">Events Added</h2>
-    <h6 class="event_info">Coming soon!</h6>
-
-    <h2 class="conn_head">Connections</h2>
-    <h6 class="conn_info">Coming soon!</h6>
-
-    <h2 class="proj_head">My Projects</h2>
-    <h6 class="proj_info">Coming soon!</h6>
-
-    <div class="footer">
-        <div class="logo_foot">
-            <img class="foot_brand" src="~/images/brand_icon.png" alt="logo" />
-            <h3 class="ss_logo">StartSmart</h3>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <link href="~/css/bootstrap.min.css" rel="stylesheet">
+        <link href="~/css/navbar.css" rel="stylesheet">
+        <link href="~/css/Homepage.css" rel="stylesheet">
+    </head>
+    <body>
+        <hr />
+        <div class="container-fluid">
+            <div class="section d-none d-lg-block">
+                <div class="row">
+                    <div class="col-8 d-flex justify-content-start">
+                        <a asp-action="WelcomePage" asp-controller="Home" asp-route-id="@Model.User.Id"><img class="logo" src="~/images/brand_img.png" alt="logo" /></a>
+                        <a class="top_bar" asp-action="Learn" asp-controller="Home" asp-route-id="@Model.User.Id">Learn</a>
+                        <a class="top_bar" asp-action="Events" asp-controller="Home" asp-route-id="@Model.User.Id">Events</a>
+                        <a class="top_bar" href="#">Network</a>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <a class="cta" asp-action="Details" asp-controller="Home" asp-route-id="@Model.User.Id"><button>My Profile</button></a>
+                        <a class="cta_no_margin" asp-action="Index" asp-controller="Home"><button>Log out</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="foot_els">
-            <img class="foot_el1" src="~/images/foot_el1.png" />
-            <img class="foot_el2" src="~/images/foot_el2.png" />
-            <img class="foot_el3" src="~/images/foot_el3.png" />
 
+    </body>
+
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <body>
+        <div class="container-fluid">
+            <div class="section d-none d-lg-block">
+                <div class="row justify-content-start">
+
+                    <div class="offerings text-center col d-flex justify-content-left align-self-left">
+                        <h1 class="heading_1">Profile</h1>
+                    </div>
+                </div>
+                <hr /><hr />
+                <div class="row justify-content-start no-gutters">
+
+                    <div class="offerings text-center col-3 d-flex justify-content-start">
+                        <h1 class="heading_2">General Information</h1>
+                    </div>
+                    <div class="offerings col">
+                        <a asp-action="Edit" asp-controller="Home" asp-route-id="@Model.User.Id"><button class="edit_general">Edit Profile</button></a>
+                    </div>
+                </div>
+                <hr /><hr />
+
+                <hr />
+                <div class="row justify-content-start">
+
+                    <div class="offerings text-center col-1 d-flex align-self-center">
+                        <h1 class="heading_4">Name:</h1>
+                    </div>
+                    <div class="offerings text-center col d-flex align-self-center">
+                        <h1 class="heading_5">@Model.User.FirstName @Model.User.LastName </h1>
+                    </div>
+                </div>
+
+
+                <hr />
+                <div class="row justify-content-start">
+
+                    <div class="offerings text-center col-1 d-flex align-self-center">
+                        <h1 class="heading_4">Email:</h1>
+                    </div>
+                    <div class="offerings text-center col d-flex align-self-center">
+                        <h1 class="heading_5">@Model.User.Email</h1>
+                    </div>
+                </div>
+                <hr />
+                <div class="row justify-content-start">
+
+                    <div class="offerings text-center col-1 d-flex align-self-center">
+                        <h1 class="heading_4">MBTI:</h1>
+                    </div>
+                    <div class="offerings text-center col d-flex align-self-center">
+                        <h1 class="heading_5">@Model.User.MBTI</h1>
+                    </div>
+                </div>
+
+
+                <hr />
+                <div class="row justify-content-start">
+
+                    <div class="offerings text-center col-1 d-flex align-self-center">
+                        <h1 class="heading_4">Interests:</h1>
+                    </div>
+                    <div class="offerings text-center col d-flex align-self-center">
+                        <h1 class="heading_5">@Model.User.Interests</h1>
+                    </div>
+                </div>
+
+                <hr /><hr /> <hr />
+                <div class="row justify-content-start no-gutters">
+
+                    <div class="offerings text-center col-3 d-flex justify-content-start">
+                        <h1 class="heading_2">Achievements</h1>
+                    </div>
+                </div>
+                <hr />
+                <div class="row justify-content-start">
+                    <div class="col-2 d-flex justify-content-start">
+                        <div>
+                            <img class="img-fluid align-self-center" src="~/images/icon-controller.png" />
+                        </div>
+                    </div>
+                    <div class="col-2 d-flex justify-content-start">
+                        <div>
+                            <img class="img-fluid align-self-center" src="~/images/icon-feedback.png" />
+                        </div>
+                    </div>
+                    <div class="col-2 d-flex justify-content-start">
+                        <div>
+                            <img class="img-fluid align-self-center" src="~/images/icon-event.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <hr /><hr /> <hr />
+                <div class="row justify-content-start no-gutters">
+
+                    <div class="offerings text-center col-3 d-flex justify-content-start">
+                        <h1 class="heading_2">Events Attended</h1>
+                    </div>
+                </div>
+                <hr />
+                <div class="row justify-content-start">
+
+                    <div class="offerings col d-flex justify-content-left">
+                        <img class="profile_event_img img-fluid align-self-center" src="~/images/single-event.png" />
+                    </div>
+                </div>
+
+                <hr />
+                <div class="row justify-content-start no-gutters">
+
+                    <div class="offerings text-center col-3 d-flex justify-content-start">
+                        <h1 class="heading_2">Connections</h1>
+                    </div>
+                </div>
+                <hr />
+                <div class="row justify-content-start">
+
+                    <div class="offerings col d-flex justify-content-left">
+                        <h1 class="sub_1_italics">Coming Soon!</h1>
+                    </div>
+                </div>
+
+                <hr />
+                <div class="row justify-content-start no-gutters">
+
+                    <div class="offerings text-center col-3 d-flex justify-content-start">
+                        <h1 class="heading_2">My Projects</h1>
+                    </div>
+                </div>
+                <hr />
+                <div class="row justify-content-start">
+
+                    <div class="offerings col d-flex justify-content-left">
+                        <h1 class="sub_1_italics">Coming Soon!</h1>
+                    </div>
+                </div>
+
+
+
+            </div>
         </div>
-    </div>
+
+
+        <hr /><hr />  <hr /><hr />  <hr /><hr />  <hr /><hr />  <hr /><hr />  <hr /><hr />  <hr /><hr />
+
+        <footer id="custom_footer" class="py-4 text-white-50 d-none d-lg-block">
+            <div class="container-fluid text-center">
+                <div class="section ">
+                    <img class="logo" src="~/images/brand_img.png" alt="logo" />
+                    <small>Copyright &copy; StartSmart</small>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

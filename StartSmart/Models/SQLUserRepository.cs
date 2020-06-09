@@ -13,7 +13,7 @@ namespace StartSmart.Models
             this.context = context;
         }
 
-        public User Add(User user)
+        public ApplicationUser Add(ApplicationUser user)
         {
             context.Users.Add(user);
             context.SaveChanges();
@@ -21,9 +21,9 @@ namespace StartSmart.Models
 
         }
 
-        public User Delete(int id)
+        public ApplicationUser Delete(int id)
         {
-            User user = context.Users.Find(id);
+            ApplicationUser user = context.AspNetUsers.Find(id);
             if( user != null )
             {
                 context.Users.Remove(user);
@@ -32,17 +32,17 @@ namespace StartSmart.Models
             return user;
         }
 
-        public IEnumerable<User> GetAllUsers()
+        public IEnumerable<ApplicationUser> GetAllUsers()
         {
-            return context.Users;
+            return context.AspNetUsers;
         }
 
-        public User GetUser(int id)
+        public ApplicationUser GetUser(string id)
         {
-            return context.Users.Find( id );
+            return context.AspNetUsers.Find( id );
         }
 
-        public User Update(User userChanges)
+        public ApplicationUser Update(ApplicationUser userChanges)
         {
             var user = context.Users.Attach( userChanges );
             user.State = Microsoft.EntityFrameworkCore.EntityState.Modified;

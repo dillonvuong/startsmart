@@ -26,35 +26,60 @@ namespace StartSmart.Controllers
             return View(model);
         }
 
-        public ViewResult Details( int? id )
+
+        [HttpGet]
+        public ViewResult Details( string? id )
         {
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
             {
-                User = _userRepository.GetUser( id??1 ),
+                User = _userRepository.GetUser( id?? "4c0cd7d3-735d-4962-a7b1-2fa524d4d4e7" ),
                 PageTitle = "User Details"
 
             };
             return View( homeDetailsViewModel );
         }
 
-        [HttpGet]
+        /*[HttpGet]
         public ViewResult Create()
+        {
+
+            return View();
+        }*/
+
+        [HttpGet]
+        public ViewResult LoginPage()
         {
 
             return View();
         }
 
         [HttpGet]
-        public ViewResult Edit( int id )
+        public ViewResult Events( string? id )
         {
-            User user = _userRepository.GetUser(id);
+            HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+            {
+                User = _userRepository.GetUser(id ?? "4c0cd7d3-735d-4962-a7b1-2fa524d4d4e7"),
+                PageTitle = "User Events"
+
+            };
+            return View(homeDetailsViewModel);
+
+        }
+
+        [HttpGet]
+        public ViewResult Edit( string id )
+        {
+            ApplicationUser user = _userRepository.GetUser(id);
+            System.Diagnostics.Debug.WriteLine(user.Id);
             UserEditViewModel userEditViewModel = new UserEditViewModel
             {
+                
                 Id = user.Id,
-                Name = user.Name,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
                 Email = user.Email,
-                Major = user.Major,
-                Bio = user.Bio
+                MBTI = user.MBTI,
+                Interests = user.Interests
 
             };
 
@@ -64,18 +89,20 @@ namespace StartSmart.Controllers
         [HttpPost]
         public IActionResult Edit( UserEditViewModel model )
         {
-            System.Diagnostics.Debug.WriteLine(model.Major);
-            
-            User user = _userRepository.GetUser(model.Id);
-                
-            user.Name = model.Name;
+            System.Diagnostics.Debug.WriteLine(model.MBTI);
+
+            ApplicationUser user = _userRepository.GetUser(model.Id);
+
+            user.UserName = model.Email;
+            user.FirstName = model.FirstName;
+            user.LastName = model.LastName;
             user.Email = model.Email;
-            user.Major = model.Major;
-            user.Bio = model.Bio;
+            user.MBTI = model.MBTI;
+            user.Interests = model.Interests;
 
             _userRepository.Update( user );
 
-            return RedirectToAction( "details" );
+            return RedirectToAction( "details", new { id = user.Id });
             
         }
 
@@ -95,11 +122,11 @@ namespace StartSmart.Controllers
         }
 
         [HttpGet]
-        public ViewResult WelcomePage( int? id )
+        public ViewResult WelcomePage( string? id )
         {
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
             {
-                User = _userRepository.GetUser(id ?? 1),
+                User = _userRepository.GetUser(id ?? "4c0cd7d3-735d-4962-a7b1-2fa524d4d4e7" ),
                 PageTitle = "User Details"
 
             };
@@ -107,18 +134,30 @@ namespace StartSmart.Controllers
         }
 
         [HttpGet]
-        public ViewResult SignUpConfirmation(int? id)
+        public ViewResult Learn(string? id)
         {
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
             {
-                User = _userRepository.GetUser(id ?? 1),
+                User = _userRepository.GetUser(id ?? "4c0cd7d3-735d-4962-a7b1-2fa524d4d4e7"),
+                PageTitle = "User Details"
+
+            };
+            return View(homeDetailsViewModel);
+        }
+
+        [HttpGet]
+        public ViewResult SignUpConfirmation(string? id)
+        {
+            HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+            {
+                User = _userRepository.GetUser(id ?? "4c0cd7d3-735d-4962-a7b1-2fa524d4d4e7" ),
                 PageTitle = "Welcome to StartSmart"
 
             };
             return View(homeDetailsViewModel);
         }
 
-        [HttpPost]
+        /*[HttpPost]
         public IActionResult Create( UserCreateViewModel model )
         {
             if( ModelState.IsValid )
@@ -127,10 +166,11 @@ namespace StartSmart.Controllers
                
                 User newUser = new User
                 {
-                    Name = model.Name,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
                     Email = model.Email,
-                    Major = model.Major,
-                    Bio = model.Bio,
+                    MBTI = model.MBTI,
+                    Interests = model.Interests,
                     ProfilePicture = uniqueFileName,
                     Password = model.Password
                   
@@ -138,11 +178,11 @@ namespace StartSmart.Controllers
 
                 _userRepository.Add(newUser);
 
-                return RedirectToAction("details", new { id = newUser.Id });
+                return RedirectToAction("SignUpConfirmation", new { id = newUser.Id });
             }
 
             return View();     
-        }
+        }*/
 
 
     }

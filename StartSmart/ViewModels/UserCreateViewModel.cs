@@ -12,19 +12,26 @@ namespace StartSmart.ViewModels
     {
 
         [Required, MaxLength(50)]
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+
+        [Required, MaxLength(50)]
+        public string LastName { get; set; }
 
         [Required]
         [RegularExpression(@"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$", ErrorMessage = "Invalid Email format")]
         public string Email { get; set; }
-        public string Major { get; set; }
+        public string MBTI { get; set; }
 
         public IFormFile ProfilePicture { get; set; }
 
-        public string Bio { get; set; }
+        public string Interests { get; set; }
 
         [Required]
         public string Password { get; set; }
+        [Compare("Password",
+                    ErrorMessage = "Passwords do not match")]
+        [Required]
+        public string ConfirmPassword { get; set; }
 
     }
 }
