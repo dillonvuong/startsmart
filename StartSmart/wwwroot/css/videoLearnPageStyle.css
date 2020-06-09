@@ -1,0 +1,584 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    font-size:1vw;
+        letter-spacing: 0.07em;
+}
+body{
+
+    background: linear-gradient(181.54deg, #000E35 14.58%, #011A63 97.32%) no-repeat fixed center;
+    max-width: 100%;
+}
+
+.section{
+    max-width: 100%;
+}
+
+.container-fluid{
+    max-width:90%;
+}
+
+.top_bar{  
+    text-align: center;
+    padding: 1em;
+}
+
+.moduleTitle{
+    position: absolute;
+    width: 245px;
+    height: 29px;
+    left: 387px;
+    top: 160px;
+
+
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+
+    color: #FFFFFF;
+}
+
+.videoTitle{
+    position: absolute;
+    width: 700px;
+    height: 73px;
+    left: 387px;
+    top: 189px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 73px;
+
+    color: #FFFFFF;
+}
+
+.marketVideo{
+	position: absolute;
+    width: 1024px;
+    height: 575px;
+    left: 387px;
+    top: 287px;
+}
+
+.descriptionTitle{
+	position: absolute;
+    width: 183px;
+    height: 30px;
+    left: 387px;
+    top: 908px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+
+    color: #FFFFFF;
+}
+
+.descriptionText{
+	position: absolute;
+    width: 1019px;
+    height: 94px;
+    left: 387.1px;
+    top: 951px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+}
+
+.commentTitle{
+	position: absolute;
+    width: 183px;
+    height: 30px;
+    left: 385px;
+    top: 1078px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+
+    color: #FFFFFF;
+}
+
+.commentBox{
+	position: absolute;
+    width: 914px;
+    height: 51px;
+    left: 385px;
+    top: 1130px;
+
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.commentBoxText{
+	position: absolute;
+    width: 491px;
+    height: 40px;
+    left: 398px;
+    top: 1141px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+.harunaTitle{
+    position: absolute;
+    width: 1019px;
+    height: 32px;
+    left: 385px;
+    top: 1224px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+.harunaText{
+    position: absolute;
+    width: 1019px;
+    height: 32px;
+    left: 385px;
+    top: 1256px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+.neilTitle{
+    position: absolute;
+    width: 1019px;
+    height: 32px;
+    left: 385px;
+    top: 1315px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+.neilText{
+	position: absolute;
+    width: 1019px;
+    height: 32px;
+    left: 385px;
+    top: 1347px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+.hannahTitle{
+    position: absolute;
+    width: 1019px;
+    height: 32px;
+    left: 385px;
+    top: 1406px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+/* or 167% */
+
+
+    color: #FFFFFF;
+}
+
+.hannahText{
+    position: absolute;
+    width: 400px;
+    height: 30px;
+    left: 385px;
+    top: 1438px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+.neilTitle2{
+    position: absolute;
+    width: 1019px;
+    height: 32px;
+    left: 385px;
+    top: 1495px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+.neilText2{
+    position: absolute;
+    width: 1019px;
+    height: 32px;
+    left: 385px;
+    top: 1527px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #FFFFFF;	
+}
+
+.menuContainer{
+	position: absolute;
+    width: 354px;
+    height: 771px;
+    left: 1px;
+    top: 164px;
+
+    background: #011A63;
+    border-radius: 5px;
+}
+
+.divideLine{
+	position: absolute;
+    width: 407.06px;
+    height: 0px;
+    left: -150px;
+    top: 350px;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.menuModuleTitle{
+    position: absolute;
+    width: 319px;
+    height: 110px;
+    left: 50px;
+    top: 10px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 22px;
+
+
+
+    color: #FFFFFF;
+}
+
+.menuLessonTitle{
+    position: absolute;
+    width: 319px;
+    height: 110px;
+    left: 50px;
+    top: 55px;
+
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 22px;
+
+
+
+    color: #FFFFFF;
+}
+
+.introSection{
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    left: 63px;
+    top: 120px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    align-content: center;
+    background-color: #FFFFFF;
+}
+
+.introSectionText{
+	position: absolute;
+	left: 12px;
+	top: 10px;
+
+	font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #000E35;
+}
+
+.executiveSection{
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    left: 63px;
+    top: 200px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    align-content: center;
+    background-color: #FFFFFF;
+}
+
+.executiveSectionText{
+	position: absolute;
+	left: 12px;
+	top: 10px;
+
+	font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #000E35;
+}
+
+.marketSection{
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    left: 63px;
+    top: 280px;
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    align-content: center;
+    background-color: #FF4D51;
+}
+
+.marketSectionText{
+	position: absolute;
+	left: 12px;
+	top: 10px;
+
+	font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #FFFFFF;	
+}
+
+.quizSection{
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    left: 63px;
+    top: 360px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    align-content: center;
+    background-color: #FFFFFF;
+}
+
+.quizSectionText{
+	position: absolute;
+	left: 12px;
+	top: 10px;
+
+	font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #818A91;;	
+}
+
+.deliverableSection{
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    left: 63px;
+    top: 440px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    align-content: center;
+    background-color: #FFFFFF;
+}
+
+.deliverableSectionText{
+	position: absolute;
+	left: 12px;
+	top: 10px;
+
+	font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #818A91;	
+}
+
+.conclusionSection{
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    left: 63px;
+    top: 520px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    align-content: center;
+    background-color: #FFFFFF;
+}
+
+.conclusionSectionText{
+	position: absolute;
+	left: 12px;
+	top: 10px;
+
+	font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #818A91;	
+}
+
+
+.previousLinkButton{
+	border: 1px solid #FFFFFF;    
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+    left: 378px;
+    top: 1650px;
+    position: absolute;
+    width: 192px;
+    height: 38px;
+
+    
+}
+
+.previousButton{
+	font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+
+    width: 130px;
+    height: 24px;
+
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease 0s;
+
+    position: absolute;
+    left: 30px;
+    top: 5px;
+}
+
+.previousButton:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.nextLinkButton{
+	border: 1px solid #FFFFFF;    
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+    left: 1100px;
+    top: 1650px;
+    position: absolute;
+    width: 192px;
+    height: 38px;
+
+    background: #828282;
+
+    
+}
+
+.nextButton{
+	font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+
+    width: 130px;
+    height: 24px;
+
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease 0s;
+
+    position: absolute;
+    left: 30px;
+    top: 5px;
+}
+
+.nextButton:hover {
+    background-color: #FF1A1F;
+}
+
+#custom_footer{
+	position: absolute;
+    background-color: #21315F;
+    width:1900px;
+    height: 150px;
+    top: 1861px;
+}

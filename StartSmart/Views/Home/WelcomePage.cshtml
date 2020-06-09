@@ -19,6 +19,7 @@
 
         <link href="~/css/navbar.css" rel="stylesheet">
         <link href="~/css/Homepage.css" rel="stylesheet">
+        <title>StartSmart: Welcome Back!</title>
 
     </head>
         <body>
@@ -82,9 +83,9 @@
                     </div>
                     <hr /><hr /><hr />
                     <div class="row justify-content-start">
-                        <div class="col d-flex justify-content-start">
-                            <button class="cont_learning">Continue Learning</button>
-                            <button class="view_modules">View All Modules</button>
+                        <div class="col justify-content-start">
+                            <a  asp-action="VideoLearn" asp-controller="Home" asp-route-id="@Model.User.Id"><button class="cont_learning">Continue Learning</button></a>
+                            <a  asp-action="Learn" asp-controller="Home" asp-route-id="@Model.User.Id"><button class="view_modules">View All Modules</button></a>
                         </div>
                     </div>
 
@@ -94,8 +95,8 @@
                         <div class="offerings text-center col-10 d-flex">
                             <h1 class="heading_2">Events Near You</h1>
                         </div>
-                        <div class="offerings text-center col-2 d-flex justify-content-end">
-                            <button class="view_events">View All</button>
+                        <div class="offerings text-center col-2 ustify-content-end">
+                            <a  asp-action="Events" asp-controller="Home" asp-route-id="@Model.User.Id"><button class="view_events">View All</button></a>
                         </div>
                     </div>
 

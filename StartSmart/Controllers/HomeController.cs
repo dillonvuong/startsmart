@@ -146,6 +146,42 @@ namespace StartSmart.Controllers
         }
 
         [HttpGet]
+        public ViewResult VideoLearn(string? id)
+        {
+            HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+            {
+                User = _userRepository.GetUser(id ?? "4c0cd7d3-735d-4962-a7b1-2fa524d4d4e7"),
+                PageTitle = "User Details"
+
+            };
+            return View(homeDetailsViewModel);
+        }
+
+        [HttpGet]
+        public ViewResult LearnQuiz(string? id)
+        {
+            HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+            {
+                User = _userRepository.GetUser(id ?? "4c0cd7d3-735d-4962-a7b1-2fa524d4d4e7"),
+                PageTitle = "User Details"
+
+            };
+            return View(homeDetailsViewModel);
+        }
+
+        [HttpGet]
+        public ViewResult LearnDeliverable(string? id)
+        {
+            HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+            {
+                User = _userRepository.GetUser(id ?? "4c0cd7d3-735d-4962-a7b1-2fa524d4d4e7"),
+                PageTitle = "User Details"
+
+            };
+            return View(homeDetailsViewModel);
+        }
+
+        [HttpGet]
         public ViewResult SignUpConfirmation(string? id)
         {
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()

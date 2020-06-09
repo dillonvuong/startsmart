@@ -4,8 +4,9 @@ html{
     font-size:1vw;
         letter-spacing: 0.07em;
 }
-body {
-    background: #001245;
+body{
+
+    background: linear-gradient(181.54deg, #000E35 14.58%, #011A63 97.32%) no-repeat fixed center;
     max-width: 100%;
 }
 
@@ -51,7 +52,7 @@ body {
 
 .event_img {
 
-    width: 150%;
+    width: 130%;
     height: 100%;
     align-items: center;
 }
@@ -191,6 +192,29 @@ position: relative;
     font-weight: 500;
     color: #ffffff;
     text-decoration: none;}
+
+
+.post_comment{
+position: relative;
+    width: 90%;
+    height: 80%;
+    font-size: 0.8em;
+
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    display: inline-block;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
 
 
 .edit_profile{
@@ -388,6 +412,102 @@ position: relative;
     color: #FFFFFF;
 }
 
+.para{
+    position: relative;
+    font-size:1.1rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2em;
+
+
+
+    color: #FFFFFF;
+}
+
+.para2{
+    position: relative;
+    font-size:0.9rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2em;
+
+
+
+    color: #FFFFFF;
+}
+
+.file_sub{
+    position: relative;
+    font-size:0.8rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 200;
+    margin-left: 1.5em;
+
+
+
+    color: #FFFFFF;
+}
+
+.file_sub2{
+    position: relative;
+    font-size:0.7rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 200;
+
+
+
+    color: grey;
+}
+
+
+
+.heading_module_comp{
+        position: relative;
+    font-size:0.8rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 200 bold;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    margin-left:0.5em;
+
+    color: black;
+}
+.heading_module_act{
+        position: relative;
+    font-size:0.8rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 200 bold;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    margin-left:0.5em;
+
+    color: white;
+}
+.heading_module_lock{
+        position: relative;
+    font-size:0.8rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 200 bold;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    margin-left:0.5em;
+
+    color: silver;
+}
 
 .sub_1{
         position: relative;
@@ -427,18 +547,25 @@ position: relative;
 
 .offer_profile {
     position: relative;
+
     width: 100%;
     height: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+
 }
 
 .profile_event_img {
     position: relative;
+
     width: 20%;
     height: 100%;
+
+
 }
+
 
 .offer_img2 {
  position: relative;
@@ -584,7 +711,228 @@ label{
 
 }
 
+.mbti_link{
 
+    color: #FF4D51;
+     position: relative;
+    font-size:0.7rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 100 bold;
+
+}
+
+.profile_edit{
+    position: relative;
+    width: 40%;
+    height: 190%;
+    font-size: 0.8em;
+
+    background: #FF4D51;
+    /* red2 */
+    border: 1px solid #FF4D51;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-self: center;
+    display: inline-block;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.divider_line{
+    position:relative;
+    border-left: 1px solid #FFFFFF;
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+
+.divider_line2{
+    position:relative;
+    border-bottom: 1px solid #FFFFFF;
+
+}
+
+.quiz{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.submit_quiz{
+
+    position: relative;
+    width: 20%;
+    height: 300%;
+    font-size: 0.8em;
+
+    /* red2 */
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    display: block;
+    background-color: #FF4D51;
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.submit_deliverable{
+
+    position: relative;
+    width: 40%;
+    height: 250%;
+    font-size: 0.8em;
+
+    /* red2 */
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    display: block;
+    background-color: #FF4D51;
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.module_sections{
+    position: relative;
+    width: 80%;
+    height: 2.5em;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    margin-top:0.2em;
+    margin-bottom: 0.8em;
+    margin-left:0.3em;
+    background-color: #FFFFFF;
+        align-self: center;
+    display: inline-block;
+}
+.module_sections_act{
+    position: relative;
+    width: 80%;
+    height: 2.5em;
+    border-radius: 4px;
+    margin-top:0.2em;
+    margin-bottom: 0.8em;
+    margin-left:0.3em;
+    background-color:  #FF4D51;
+        align-self: center;
+    display: inline-block;
+}
+.comment_section{
+    position: relative;
+    width: 100%;
+    height: 2.5em;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    margin-top:0.2em;
+    margin-bottom: 0.8em;
+    margin-left:0.3em;
+        align-self: center;
+    display: inline-block;
+}
+
+.comment{
+        position: relative;
+    font-size:0.8rem;
+    /* H1 */
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: 200 ;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    margin-left:1em;
+
+    color: white;
+}
+.modules_tab{
+    position: sticky;
+  position: -webkit-sticky;
+  top: 10em;
+  left: 5.5em;
+
+}
+
+.modules_tab2{
+    position: relative;
+    left: 12em;
+
+}
+
+.video_lesson{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.upload_deliverable{
+    position: relative;
+    width: 40%;
+    height: 250%;
+    font-size: 0.9em;
+
+    /* red2 */
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    display: block;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.prev_task{
+    position: relative;
+    width: 30%;
+    height: 200%;
+    font-size: 0.8em;
+
+    /* red2 */
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    display: block;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.next_task{
+    position: relative;
+    width: 30%;
+    height: 200%;
+    font-size: 0.8em;
+
+    background: grey;
+    /* red2 */
+
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    display: block;
+
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
 
 #custom_footer{
     background-color: #21315F;
@@ -593,31 +941,4 @@ label{
 
 button:hover {
     background-color: #FF1A1F;
-}
-
-.profile_edit {
-    position: relative;
-    width: 40%;
-    height: 190%;
-    font-size: 0.8em;
-    background: #FF4D51;
-    /* red2 */
-    border: 1px solid #FF4D51;
-    box-sizing: border-box;
-    border-radius: 4px;
-    align-self: center;
-    display: inline-block;
-    font-family: "Prompt", sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.mbti_link {
-    color: #FF4D51;
-    position: relative;
-    font-size: 0.7rem;
-    /* H1 */
-    font-family: Prompt;
-    font-style: normal;
-    font-weight: 100 bold;
 }

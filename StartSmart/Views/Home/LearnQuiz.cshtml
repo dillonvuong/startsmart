@@ -1,0 +1,177 @@
+﻿@model HomeDetailsViewModel
+
+@{
+    ViewBag.Title = "Learn: Business Plans";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="Welcomenavbar.css" rel="stylesheet" />-->
+    <!-- <link href="Welcome.css" rel="stylesheet" /> -->
+
+    <link href="~/css/navbar.css" rel="stylesheet">
+    <link href="~/css/Homepage.css" rel="stylesheet">
+    <title>StartSmart: Module 2 Quiz</title>
+</head>
+<body>
+    <hr />
+    <div class="container-fluid">
+        <div class="section d-none d-lg-block">
+            <div class="row">
+                <div class="col-8 d-flex justify-content-start">
+                    <a asp-action="WelcomePage" asp-controller="Home" asp-route-id="@Model.User.Id"><img class="logo" src="~/images/brand_img.png" alt="logo" /></a>
+                    <a class="top_bar" asp-action="Learn" asp-controller="Home" asp-route-id="@Model.User.Id">Learn</a>
+                    <a class="top_bar" asp-action="Events" asp-controller="Home" asp-route-id="@Model.User.Id">Events</a>
+                    <a class="top_bar" href="#">Network</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                    <a class="cta" asp-action="Details" asp-controller="Home" asp-route-id="@Model.User.Id"><button>My Profile</button></a>
+                    <a class="cta_no_margin" asp-action="Index" asp-controller="Home"><button>Log out</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<hr />
+<hr />
+<hr />
+<body>
+    <div class="container-fluid">
+        <div class="section d-none d-lg-block">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <h1 class="sub_1">Module 2</h1>
+                    <h1 class="heading_3">Business Plans</h1>
+                    <div class="row">
+                        <div class="col justify-content-center align-self-center divider_line">
+                            <div class="module_sections"> <p class="heading_module_comp">Video: Introduction</p></div>
+                            <div class="module_sections"> <p class="heading_module_comp">Video: Executive Summaries</p></div>
+                            <div class="module_sections"> <p class="heading_module_comp">Video: Market Research</p></div>
+                            <div class="module_sections_act"> <p class="heading_module_act">Quiz: Business Plans</p></div>
+                            <div class="module_sections"> <p class="heading_module_lock">Deliverable: Business Plans</p></div>
+                            <div class="module_sections"> <p class="heading_module_lock">Video: Conclusion</p></div>
+                        </div>
+                    </div>
+                    <hr />
+                    <h1 class="sub_1">Module 3</h1>
+                    <h1 class="heading_3">Funding</h1>
+                    <hr />
+                    <h1 class="sub_1">Module 4</h1>
+                    <h1 class="heading_3">Prototyping</h1>
+
+                </div>
+                <div class="col-9">
+                    <h1 class="sub_1">Module 2: Business Plans</h1>
+                    <h1 class="heading_2">Quiz: Business Plans</h1>
+                    <h1 class="para2">This quiz is designed to test what you learned in the preceding tasks.</h1>
+                    <hr />
+                    <div class="divider_line2"></div>
+                    <hr />
+
+                    <hr /><hr />
+                    <h1 class="heading_3">Question 1</h1>
+                    <p class="para">
+                        What is the purpose of a business plan?
+                    </p>
+
+                    <hr />
+                    <div class="form-check ">
+                        <label class="form-check-label quiz">
+                            <input type="radio" class="form-check-input" name="optradio"> Identify the nature and context of a business oppurtunity
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label quiz">
+                            <input type="radio" class="form-check-input" name="optradio"> Identify factor affecting the venture's success
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label quiz">
+                            <input type="radio" class="form-check-input" name="optradio"> Present the entrepreneur's approach to exploiting the oppurtunity
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label quiz">
+                            <input type="radio" class="form-check-input" name="optradio"> All of the above
+                        </label>
+                    </div>
+
+                    <hr /><hr />
+                    <h1 class="heading_3">Question 2</h1>
+                    <p class="para">
+                        Which is not a type of business plan?
+                    </p>
+
+                    <hr />
+                    <div class="form-check ">
+                        <label class="form-check-label quiz">
+                            <input type="radio" class="form-check-input" name="optradio"> Mini plan
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label quiz">
+                            <input type="radio" class="form-check-input" name="optradio"> Basic plan
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label quiz">
+                            <input type="radio" class="form-check-input" name="optradio"> Comprehensive plan
+                        </label>
+                    </div>
+
+                    <hr /><hr />
+                    <h1 class="heading_3">Question 3</h1>
+                    <p class="para">
+                        Cost may affectt he outcome of a business plan
+                    </p>
+
+                    <hr />
+                    <div class="form-check ">
+                        <label class="form-check-label quiz">
+                            <input type="radio" class="form-check-input" name="optradio"> True
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label quiz">
+                            <input type="radio" class="form-check-input" name="optradio"> False
+                        </label>
+                    </div>
+
+                    <hr /><hr />
+                    <div class="row justify-content-start align-self-center">
+                        <div class="offerings col-12">
+                            <a asp-action="LearnDeliverable" asp-controller="Home" asp-route-id="@Model.User.Id"> <button class="submit_quiz">Submit Quiz</button></a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr /><hr />  <hr /><hr />  <hr /><hr />  <hr /><hr />  <hr /><hr />  <hr /><hr />  <hr /><hr />
+
+    <footer id="custom_footer" class="py-4 text-white-50 d-none d-lg-block">
+        <div class="container-fluid text-center">
+            <div class="section ">
+                <img class="logo" src="~/images/brand_img.png" alt="logo" />
+                <small>Copyright &copy; StartSmart</small>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+

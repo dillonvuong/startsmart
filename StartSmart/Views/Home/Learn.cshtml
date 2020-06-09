@@ -30,7 +30,7 @@
     <link href="~/css/navbar.css" rel="stylesheet">
     <link href="~/css/Homepage.css" rel="stylesheet">
 
-    <title>StartSmart</title>
+    <title>StartSmart: Learn Modules</title>
 </head>
 <body>
     <hr />
@@ -94,9 +94,9 @@
 
             <hr /><hr /><hr />
             <div class="row justify-content-start">
-                <div class="col d-flex justify-content-start">
-                    <button class="cont_learning">Continue Learning</button>
-                    <button class="view_modules">View All Modules</button>
+                <div class="col">
+                   <a asp-action="Videolearn" asp-controller="Home" asp-route-id="@Model.User.Id"><button class="cont_learning">Continue Module 2</button></a>
+
                 </div>
             </div>
 

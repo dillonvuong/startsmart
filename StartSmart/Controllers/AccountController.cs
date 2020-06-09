@@ -79,13 +79,11 @@ namespace StartSmart.Controllers
                 var result = await signInManager.PasswordSignInAsync( model.Email, model.Password,
                                                                         false, false );
 
-                
-                var user = signInManager.UserManager.Users.Where(x => x.UserName.Equals(model.Email)).FirstOrDefault();
-
-                System.Diagnostics.Debug.WriteLine( user.Id );
 
                 if ( result.Succeeded )
-                { 
+                {
+                    var user = signInManager.UserManager.Users.Where(x => x.UserName.Equals(model.Email)).FirstOrDefault();
+                    System.Diagnostics.Debug.WriteLine(user.Id);
                     return RedirectToAction("WelcomePage", "home", new { id = user.Id });
                 }
 
