@@ -1,4 +1,4 @@
-#StartSmart
+# StartSmart
 
 This implementation of is a proof of concept for the final vision of StartSmart. Startsmart aims to to create a platform that helps young students learn about entrepreneurship and realize their business goals.
 
